@@ -23,7 +23,7 @@
 var path = require( 'path' );
 var logger = require( 'debug' );
 var objectKeys = require( '@stdlib/utils/keys' );
-var createServer = require( '@stdlib/net/http-server' );
+var createServer = require( './../../http-server' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );

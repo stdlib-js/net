@@ -23,7 +23,7 @@
 var path = require( 'path' );
 var logger = require( 'debug' );
 var cwd = require( '@stdlib/process/cwd' );
-var createServer = require( '@stdlib/net/http-server' );
+var createServer = require( './../../http-server' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var openURL = require( '@stdlib/utils/open-url' );
 var noop = require( '@stdlib/utils/noop' );

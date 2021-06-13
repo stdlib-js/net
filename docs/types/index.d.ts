@@ -21,9 +21,9 @@
 /* tslint:disable:max-line-length */
 /* tslint:disable:max-file-line-count */
 
-import tempHttpServer = require( '@stdlib/net/disposable-http-server' );
-import httpServer = require( '@stdlib/net/http-server' );
-import simpleHttpServer = require( '@stdlib/net/simple-http-server' );
+import tempHttpServer = require( './../../disposable-http-server' );
+import httpServer = require( './../../http-server' );
+import simpleHttpServer = require( './../../simple-http-server' );
 
 /**
 * Interface describing the `net` namespace.
