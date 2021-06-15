@@ -29,7 +29,7 @@ var DEFAULTS = require( './defaults.json' );
 
 // VARIABLES //
 
-var debug = logger( '@stdlib/net/http-server');
+var debug = logger( './../../http-server');
 
 
 // MAIN //

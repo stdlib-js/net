@@ -118,7 +118,7 @@ tape( 'the function throws a type error if provided more than one argument and t
 
 tape( 'the function throws an error if an error is encountered while attempting to start a server', function test( t ) {
 	var httpServer = proxyquire( './../lib/server.js', {
-		'@stdlib/net/http-server': createServer,
+		'./../../http-server': createServer,
 		'@stdlib/utils/open-url': noop
 	});
 
@@ -140,7 +140,7 @@ tape( 'both the options and callback arguments are optional', function test( t )
 	var httpServer;
 
 	httpServer = proxyquire( './../lib/server.js', {
-		'@stdlib/net/http-server': createServer,
+		'./../../http-server': createServer,
 		'@stdlib/utils/open-url': noop
 	});
 
@@ -168,7 +168,7 @@ tape( 'the callback argument is optional (options)', function test( t ) {
 	var httpServer;
 
 	httpServer = proxyquire( './../lib/server.js', {
-		'@stdlib/net/http-server': createServer,
+		'./../../http-server': createServer,
 		'@stdlib/utils/open-url': noop
 	});
 
@@ -223,7 +223,7 @@ tape( 'if provided a `dir` option from which to serve files, the function resolv
 	var flg;
 
 	httpServer = proxyquire( './../lib/server.js', {
-		'@stdlib/net/http-server': createServer,
+		'./../../http-server': createServer,
 		'@stdlib/utils/open-url': noop,
 		'./request_listener.js': requestListener
 	});

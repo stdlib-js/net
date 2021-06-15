@@ -91,7 +91,7 @@ tape( 'the function throws a type error if provided a callback argument which is
 
 tape( 'the function throws an error if an error is encountered while attempting to start a server', function test( t ) {
 	var httpServer = proxyquire( './../lib/server.js', {
-		'@stdlib/net/http-server': createServer,
+		'./../../http-server': createServer,
 		'@stdlib/utils/open-url': noop
 	});
 
