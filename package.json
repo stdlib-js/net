@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/net",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Standard library networking.",
   "license": "Apache-2.0",
   "author": {
