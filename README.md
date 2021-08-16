@@ -149,7 +149,6 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/net/simple-http-server]: https://github.com/stdlib-js/net/tree/main/simple-http-server
 
-
 <!-- </toc-links> -->
 
 </section>
