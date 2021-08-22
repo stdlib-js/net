@@ -35,12 +35,12 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert": "github:stdlib-js/assert",
-    "@stdlib/buffer": "github:stdlib-js/buffer",
-    "@stdlib/cli": "github:stdlib-js/cli",
-    "@stdlib/fs": "github:stdlib-js/fs",
-    "@stdlib/process": "github:stdlib-js/process",
-    "@stdlib/utils": "github:stdlib-js/utils",
+    "@stdlib/assert": "github:stdlib-js/assert#main",
+    "@stdlib/buffer": "github:stdlib-js/buffer#main",
+    "@stdlib/cli": "github:stdlib-js/cli#main",
+    "@stdlib/fs": "github:stdlib-js/fs#main",
+    "@stdlib/process": "github:stdlib-js/process#main",
+    "@stdlib/utils": "github:stdlib-js/utils#main",
     "debug": "^2.6.9"
   },
   "devDependencies": {
