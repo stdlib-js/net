@@ -44,9 +44,9 @@
 
 // MODULES //
 
-var httpServer = require( './server.js' );
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = httpServer;
+module.exports = main;
