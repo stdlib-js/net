@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import net from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/net/tags). For example,
+
+```javascript
 import net from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { httpServer, simpleHttpServer, tempHttpServer } from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@v0.2.1-esm/index.mjs';
+import { httpServer, simpleHttpServer, tempHttpServer } from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@esm/index.mjs';
 ```
 
 #### net
@@ -91,7 +96,7 @@ var n = net;
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import net from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@v0.2.1-esm/index.mjs';
+import net from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@esm/index.mjs';
 
 console.log( objectKeys( net ) );
 
