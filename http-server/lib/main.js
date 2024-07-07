@@ -30,7 +30,7 @@ var DEFAULTS = require( './defaults.json' );
 
 // VARIABLES //
 
-var debug = logger( './../../http-server');
+var debug = logger( './../../http-server' );
 
 
 // MAIN //
