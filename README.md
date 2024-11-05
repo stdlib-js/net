@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import net from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/net/tags). For example,
+
+```javascript
 import net from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@v0.3.2-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { httpServer, simpleHttpServer, tempHttpServer } from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@v0.3.2-deno/mod.js';
+import { httpServer, simpleHttpServer, tempHttpServer } from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@deno/mod.js';
 ```
 
 #### net
@@ -86,7 +91,7 @@ var n = net;
 
 ```javascript
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import net from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@v0.3.2-deno/mod.js';
+import net from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@deno/mod.js';
 
 console.log( objectKeys( net ) );
 ```
