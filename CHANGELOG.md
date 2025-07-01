@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-19)
+## Unreleased (2025-07-01)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`0d966fa`](https://github.com/stdlib-js/stdlib/commit/0d966faefc68c61aee2e5504b25e8704f514cd21) - **test:** use different ports for each test to avoid already in use errors _(by Philipp Burckhardt)_
 -   [`4a70790`](https://github.com/stdlib-js/stdlib/commit/4a707903dfef7c2b56216000165706497d19a251) - **style:** add missing spaces _(by Philipp Burckhardt)_
 
 </details>
