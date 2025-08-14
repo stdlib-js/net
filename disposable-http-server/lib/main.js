@@ -112,7 +112,7 @@ function httpServer( options ) {
 	if ( !opts.html ) {
 		debug( 'No HTML content provided.' );
 		debug( 'Loading a boilerplate HTML page...' );
-		fpath = path.resolve( __dirname, '../static/index.html' );
+		fpath = path.resolve( __dirname, 'static/index.html' );
 		opts.html = readFileSync( fpath );
 	}
 	// Create a function to boot a server...

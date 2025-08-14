@@ -176,7 +176,7 @@ tape( 'if only provided JavaScript, the server serves an HTML boilerplate and th
 		'javascript': 'console.log("Beep");'
 	};
 
-	fpath = path.resolve( __dirname, '../static/index.html' );
+	fpath = path.resolve( __dirname, '../lib/static/index.html' );
 	html = readFileSync( fpath, 'utf8' );
 
 	httpServer( opts, onReady );
