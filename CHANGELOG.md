@@ -12,6 +12,11 @@
 
 <details>
 
+-   [`7748b7c`](https://github.com/stdlib-js/stdlib/commit/7748b7c758b477c52c94e5a69dcd2388377717ff) - **docs:** add comment _(by Athan Reines)_
+-   [`74bef69`](https://github.com/stdlib-js/stdlib/commit/74bef694304a866f24b4b21a6c2e5f3c1e248859) - **refactor:** consolidate workaround logic in a function _(by Athan Reines)_
+-   [`10d8600`](https://github.com/stdlib-js/stdlib/commit/10d86001daa3b4dbd6f3511f186186c95a8bcfea) - **refactor:** move functions to parent scope _(by Athan Reines)_
+-   [`b0856a0`](https://github.com/stdlib-js/stdlib/commit/b0856a099819945edb10fe669e9e98d04e2886bf) - **refactor:** use `resolve` function directly _(by Athan Reines)_
+-   [`154cd80`](https://github.com/stdlib-js/stdlib/commit/154cd80f3ab0ae8e8fad845fa73af8994b3cd2c3) - **docs:** fix type _(by Athan Reines)_
 -   [`f64bebb`](https://github.com/stdlib-js/stdlib/commit/f64bebbdd05764a88dfcc5897b29edea40005f03) - **refactor:** move folder to `lib` folder _(by Athan Reines)_
 -   [`77867ac`](https://github.com/stdlib-js/stdlib/commit/77867ac1767a186023f633dea30ddf860962aaed) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
 -   [`153c9c1`](https://github.com/stdlib-js/stdlib/commit/153c9c19e7e5bc138e18500cea598365d6df55d8) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
