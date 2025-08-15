@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`1c9a2da`](https://github.com/stdlib-js/stdlib/commit/1c9a2dad4c7ff11aefab03110d9c0fa7ad94e969) - **docs:** update copy _(by Athan Reines)_
 -   [`d02db19`](https://github.com/stdlib-js/stdlib/commit/d02db19483a002759417943f0a6c8521fdfe1a4c) - **docs:** update note _(by Athan Reines)_
 -   [`7e695d4`](https://github.com/stdlib-js/stdlib/commit/7e695d4145153f2c44af922aad5e4f6e9a131b90) - **style:** remove space _(by Athan Reines)_
 -   [`2996658`](https://github.com/stdlib-js/stdlib/commit/2996658b99f63d5f4505f76d6393f6f75c1aec13) - **fix:** move server options into factory function _(by Athan Reines)_
