@@ -104,7 +104,7 @@ type Callback = Nullary | Unary | Binary;
 *
 * @param done - callback to invoke after creating the server
 */
-type httpServer = ( done: Callback ) => void; // FIXME: need to allow for an `options` argument with support for built-in server options
+type httpServer = ( done: Callback ) => void;
 
 /**
 * Returns a function which creates an HTTP server.
@@ -126,6 +126,10 @@ declare function factory( requestListener?: RequestListener ): httpServer;
 
 /**
 * Returns a function which creates an HTTP server.
+*
+* ## Notes
+*
+* -   In addition to options documented below, the function supports any options supported by `http.createServer`. Which server options are supported depends on the Node.js version. Older Node.js versions (e.g., <= v8.12.0) do not support an options object when calling `http.createServer`, and, for those versions, any options specific to Node.js are ignored.
 *
 * @param options - server options
 * @param options.port - server port (default: 0)
@@ -154,7 +158,7 @@ declare function factory( requestListener?: RequestListener ): httpServer;
 * }
 * var httpServer = factory( opts, onRequest );
 */
-declare function factory( options: Options, requestListener?: RequestListener ): httpServer;
+declare function factory<T extends Options>( options: T, requestListener?: RequestListener ): httpServer;
 
 
 // EXPORTS //

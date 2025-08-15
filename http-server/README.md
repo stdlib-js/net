@@ -40,8 +40,8 @@ var httpServer = httpServerFactory();
 
 The function supports the following parameters:
 
--   **options**: options.
--   **requestListener**: callback to invoke upon receiving an HTTP request.
+-   **options**: options (_optional_).
+-   **requestListener**: callback to invoke upon receiving an HTTP request (_optional_).
 
 To bind a request callback to a server, provide a `requestListener`.
 
@@ -54,7 +54,7 @@ function requestListener( request, response ) {
 var httpServer = httpServerFactory( requestListener );
 ```
 
-The function accepts the following options:
+In addition to the options supported by [`http.createServer`][nodejs-http-create-server], the function accepts the following options:
 
 -   **port**: server port. Default: `0` (i.e., randomly assigned).
 -   **maxport**: max server port when port hunting. Default: `maxport=port`.
@@ -84,7 +84,7 @@ var httpServer = httpServerFactory( opts );
 
 When provided a `maxport` option, a created server will search for the first available `port` on which to listen, starting from `port`.
 
-#### httpServer( \[options,] done )
+#### httpServer( done )
 
 Creates an [HTTP][nodejs-http] server.
 
@@ -104,7 +104,6 @@ httpServer( done );
 
 The function supports the following parameters:
 
--   **options**: server options which are passed directly to [`http.createServer`][nodejs-http-create-server]. Which options are supported depends on the Node.js version. Older Node.js versions (e.g., <= v8.12.0) do not support an options object, and, for those versions, a provided options object is ignored.
 -   **done**: callback to invoke once a server is listening and ready to handle requests.
 
 </section>
@@ -115,6 +114,7 @@ The function supports the following parameters:
 
 ## Notes
 
+-   Which server options are supported depends on the Node.js version. Older Node.js versions (e.g., <= v8.12.0) do not support an options object when calling [`http.createServer`][nodejs-http-create-server], and, for those versions, any options specific to Node.js are ignored.
 -   Port hunting can be useful in a microservice deployment. When a `port` is randomly assigned (`options.port=0`), if a server fails and is restarted, the server is unlikely to bind to its previous `port`. By allowing a constrained search, assuming no lower `ports` within a specified range have freed up in the meantime, the likelihood of listening on the same `port` is increased. A server can typically restart and bind to the same `port` faster than binding to a new `port` and re-registering with a microservice registry, thus minimizing possible service interruption and downtime.
 
 </section>

@@ -2,6 +2,12 @@
 {{alias}}( [options,] [requestListener] )
     Returns a function to create an HTTP server.
 
+    In addition to options documented below, the function supports any options
+    supported by `http.createServer`. Which server options are supported depends
+    on the Node.js version. Older Node.js versions (e.g., <= v8.12.0) do not
+    support an options object when calling `http.createServer`, and, for those
+    versions, any options specific to Node.js are ignored.
+
     Parameters
     ----------
     options: Object (optional)
@@ -47,14 +53,11 @@
     <Function>
 
 
-httpServer( [options,] done )
+httpServer( done )
     Creates an HTTP server.
 
     Parameters
     ----------
-    options: Object (optional)
-        Server options which are passed directly to `http.createServer`.
-
     done: Function
         Callback to invoke after creating a server.
 

@@ -6,12 +6,23 @@
 
 ## Unreleased (2025-08-15)
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`2996658`](https://github.com/stdlib-js/stdlib/commit/2996658b99f63d5f4505f76d6393f6f75c1aec13) - move server options into factory function
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`2996658`](https://github.com/stdlib-js/stdlib/commit/2996658b99f63d5f4505f76d6393f6f75c1aec13) - **fix:** move server options into factory function _(by Athan Reines)_
 -   [`c6df9e8`](https://github.com/stdlib-js/stdlib/commit/c6df9e8b5a6349b8c877902ef44564f7c3196de6) - **refactor:** add support for built-in server options and rename functions _(by Athan Reines)_
 -   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`f344466`](https://github.com/stdlib-js/stdlib/commit/f344466c6dcfb8f52d7f3148acaadd52772938da) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
