@@ -129,7 +129,7 @@ declare function factory( requestListener?: RequestListener ): httpServer;
 *
 * ## Notes
 *
-* -   In addition to options documented below, the function supports any options supported by `http.createServer`. Which server options are supported depends on the Node.js version. Older Node.js versions (e.g., <= v8.12.0) do not support an options object when calling `http.createServer`, and, for those versions, any options specific to Node.js are ignored.
+* -   In addition to options documented below, the function supports any options supported by `http.createServer`. Which server options are supported depends on the Node.js version. Older Node.js versions (e.g., <= v8.12.0) do not support an options object when calling `http.createServer`, and, for those versions, any options supported by `http.createServer` in later Node.js versions are ignored.
 *
 * @param options - server options
 * @param options.port - server port (default: 0)
