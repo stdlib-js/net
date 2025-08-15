@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-14)
+## Unreleased (2025-08-15)
 
 <section class="commits">
 
@@ -12,6 +12,9 @@
 
 <details>
 
+-   [`c6df9e8`](https://github.com/stdlib-js/stdlib/commit/c6df9e8b5a6349b8c877902ef44564f7c3196de6) - **refactor:** add support for built-in server options and rename functions _(by Athan Reines)_
+-   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`f344466`](https://github.com/stdlib-js/stdlib/commit/f344466c6dcfb8f52d7f3148acaadd52772938da) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`7748b7c`](https://github.com/stdlib-js/stdlib/commit/7748b7c758b477c52c94e5a69dcd2388377717ff) - **docs:** add comment _(by Athan Reines)_
 -   [`74bef69`](https://github.com/stdlib-js/stdlib/commit/74bef694304a866f24b4b21a6c2e5f3c1e248859) - **refactor:** consolidate workaround logic in a function _(by Athan Reines)_
 -   [`10d8600`](https://github.com/stdlib-js/stdlib/commit/10d86001daa3b4dbd6f3511f186186c95a8bcfea) - **refactor:** move functions to parent scope _(by Athan Reines)_

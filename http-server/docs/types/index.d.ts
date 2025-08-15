@@ -104,7 +104,7 @@ type Callback = Nullary | Unary | Binary;
 *
 * @param done - callback to invoke after creating the server
 */
-type createServer = ( done: Callback ) => void;
+type httpServer = ( done: Callback ) => void; // FIXME: need to allow for an `options` argument with support for built-in server options
 
 /**
 * Returns a function which creates an HTTP server.
@@ -113,16 +113,16 @@ type createServer = ( done: Callback ) => void;
 * @returns function which creates an HTTP server
 *
 * @example
-* var createServer = httpServer();
+* var httpServer = factory();
 *
 * @example
 * function onRequest( request, response ) {
 *     console.log( request.url );
 *     response.end( 'OK' );
 * }
-* var createServer = httpServer( onRequest );
+* var httpServer = factory( onRequest );
 */
-declare function httpServer( requestListener?: RequestListener ): createServer;
+declare function factory( requestListener?: RequestListener ): httpServer;
 
 /**
 * Returns a function which creates an HTTP server.
@@ -141,7 +141,7 @@ declare function httpServer( requestListener?: RequestListener ): createServer;
 *     'port': 7331,
 *     'address': '0.0.0.0'
 * };
-* var createServer = httpServer( opts );
+* var httpServer = factory( opts );
 *
 * @example
 * var opts = {
@@ -152,11 +152,11 @@ declare function httpServer( requestListener?: RequestListener ): createServer;
 *     console.log( request.url );
 *     response.end( 'OK' );
 * }
-* var createServer = httpServer( opts, onRequest );
+* var httpServer = factory( opts, onRequest );
 */
-declare function httpServer( options: Options, requestListener?: RequestListener ): createServer;
+declare function factory( options: Options, requestListener?: RequestListener ): httpServer;
 
 
 // EXPORTS //
 
-export = httpServer;
+export = factory;

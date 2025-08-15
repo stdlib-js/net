@@ -23,6 +23,8 @@
 var http = require( 'http' );
 var logger = require( 'debug' );
 var isFunction = require( '@stdlib/assert/is-function' );
+var isObject = require( '@stdlib/assert/is-object' );
+var NODE_VERSION = require( '@stdlib/process/node-version' );
 var format = require( '@stdlib/string/format' );
 var validate = require( './validate.js' );
 var DEFAULTS = require( './defaults.json' );
@@ -31,6 +33,7 @@ var DEFAULTS = require( './defaults.json' );
 // VARIABLES //
 
 var debug = logger( './../../http-server' );
+var SUPPORTS_OPTIONS = ( parseInt( NODE_VERSION.split( '.' )[ 0 ], 10 ) >= 8 ); // TODO: this is an imperfect test, as options only added in v8.12.0/v9.6.0
 
 
 // MAIN //
@@ -49,14 +52,14 @@ var debug = logger( './../../http-server' );
 * @returns {Function} function which creates an HTTP server
 *
 * @example
-* var createServer = httpServer();
+* var httpServer = factory();
 *
 * @example
 * var opts = {
 *     'port': 7331,
 *     'address': '0.0.0.0'
 * };
-* var createServer = httpServer( opts );
+* var httpServer = factory( opts );
 *
 * @example
 * var opts = {
@@ -67,9 +70,9 @@ var debug = logger( './../../http-server' );
 *     console.log( request.url );
 *     response.end( 'OK' );
 * }
-* var createServer = httpServer( opts, onRequest );
+* var httpServer = factory( opts, onRequest );
 */
-function httpServer() {
+function factory() {
 	var requestListener;
 	var hostname;
 	var options;
@@ -88,8 +91,7 @@ function httpServer() {
 			options = arguments[ 0 ];
 			err = validate( opts, options );
 		}
-	}
-	else if ( nargs > 1 ) {
+	} else if ( nargs > 1 ) {
 		options = arguments[ 0 ];
 		requestListener = arguments[ 1 ];
 		if ( !isFunction( requestListener ) ) {
@@ -116,21 +118,20 @@ function httpServer() {
 
 	if ( opts.hostname ) {
 		hostname = opts.hostname;
-	}
-	else if ( opts.address ) {
+	} else if ( opts.address ) {
 		hostname = opts.address;
-	}
-	else {
+	} else {
 		hostname = DEFAULTS.address;
 	}
 	debug( 'Server hostname: %s', hostname );
 
-	return createServer;
+	return httpServer;
 
 	/**
 	* Creates an HTTP server.
 	*
 	* @private
+	* @param {Options} [options] - server options
 	* @param {Callback} done - function to invoke after creating a server
 	* @throws {TypeError} must provide a function
 	*
@@ -142,15 +143,36 @@ function httpServer() {
 	*     console.log( 'Success!' );
 	*     server.close();
 	* }
-	* createServer( done );
+	* httpServer( done );
 	*/
-	function createServer( done ) {
+	function httpServer( options, done ) {
 		var server;
-		if ( !isFunction( done ) ) {
-			throw new TypeError( format( 'invalid argument. Callback argument must be a function. Value: `%s`.', done ) );
+		var nargs;
+		var opts;
+		var cb;
+
+		nargs = arguments.length;
+		if ( nargs < 2 ) {
+			opts = {};
+			cb = options;
+		} else {
+			opts = options;
+			if ( !isObject( opts ) ) {
+				throw new TypeError( format( 'invalid argument. Options argument must be an object. Value: `%s`.', opts ) );
+			}
+			cb = done;
+		}
+		if ( !isFunction( cb ) ) {
+			throw new TypeError( format( 'invalid argument. Callback argument must be a function. Value: `%s`.', cb ) );
 		}
 		if ( requestListener ) {
-			server = http.createServer( requestListener );
+			if ( SUPPORTS_OPTIONS ) {
+				server = http.createServer( opts, requestListener );
+			} else {
+				server = http.createServer( requestListener );
+			}
+		} else if ( SUPPORTS_OPTIONS ) {
+			server = http.createServer( opts );
 		} else {
 			server = http.createServer();
 		}
@@ -188,7 +210,7 @@ function httpServer() {
 		function onListen() {
 			var addr = server.address();
 			debug( 'HTTP server initialized. Server is listening for requests on %s:%d.', addr.address, addr.port );
-			done( null, server );
+			cb( null, server );
 		}
 	}
 }
@@ -196,4 +218,4 @@ function httpServer() {
 
 // EXPORTS //
 
-module.exports = httpServer;
+module.exports = factory;

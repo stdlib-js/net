@@ -24,13 +24,13 @@
 
     Returns
     -------
-    createServer: Function
+    httpServer: Function
         Function to create an HTTP server.
 
     Examples
     --------
     // Basic usage:
-    > var createServer = {{alias}}()
+    > var httpServer = {{alias}}()
     <Function>
 
     // Provide a request callback:
@@ -38,20 +38,23 @@
     ...    console.log( request.url );
     ...    response.end( 'OK' );
     ... };
-    > createServer = {{alias}}( onRequest )
+    > httpServer = {{alias}}( onRequest )
     <Function>
 
     // Specify a specific port:
     > var opts = { 'port': 7331 };
-    > createServer = {{alias}}( opts )
+    > httpServer = {{alias}}( opts )
     <Function>
 
 
-createServer( done )
+httpServer( [options,] done )
     Creates an HTTP server.
 
     Parameters
     ----------
+    options: Object (optional)
+        Server options which are passed directly to `http.createServer`.
+
     done: Function
         Callback to invoke after creating a server.
 
@@ -64,8 +67,8 @@ createServer( done )
     ...    console.log( 'Success!' );
     ...    server.close();
     ... };
-    > var createServer = {{alias}}();
-    > createServer( done );
+    > var httpServer = {{alias}}();
+    > httpServer( done );
 
     See Also
     --------
