@@ -6,6 +6,17 @@
 
 ## Unreleased (2025-08-16)
 
+<section class="features">
+
+### Features
+
+-   [`6c3f6fe`](https://github.com/stdlib-js/stdlib/commit/6c3f6fe6f732b28c68637aa2c651c451c740a8e1) - add `http2SecureServer` to namespace
+-   [`fd25355`](https://github.com/stdlib-js/stdlib/commit/fd253551235716d6732acc99ca9dfe6363bd577d) - add `net/http2-secure-server`
+
+</section>
+
+<!-- /.features -->
+
 <section class="bug-fixes">
 
 ### Bug Fixes
@@ -22,6 +33,12 @@
 
 <details>
 
+-   [`9f3732f`](https://github.com/stdlib-js/stdlib/commit/9f3732f2587d7e0f4ad16589ca5900b0cf20bbc0) - **docs:** fix examples _(by Athan Reines)_
+-   [`1f08a8b`](https://github.com/stdlib-js/stdlib/commit/1f08a8b3c6f9c39c316380b1c059ddac187d004c) - **docs:** fix examples _(by Athan Reines)_
+-   [`465d54a`](https://github.com/stdlib-js/stdlib/commit/465d54a5f86566d92668f524dadd08d6127f85d4) - **test:** fix option name _(by Athan Reines)_
+-   [`4eb8f54`](https://github.com/stdlib-js/stdlib/commit/4eb8f54376072921b0c76058dd239341a205acbc) - **test:** fix option name _(by Athan Reines)_
+-   [`6c3f6fe`](https://github.com/stdlib-js/stdlib/commit/6c3f6fe6f732b28c68637aa2c651c451c740a8e1) - **feat:** add `http2SecureServer` to namespace _(by Athan Reines)_
+-   [`fd25355`](https://github.com/stdlib-js/stdlib/commit/fd253551235716d6732acc99ca9dfe6363bd577d) - **feat:** add `net/http2-secure-server` _(by Athan Reines)_
 -   [`212b623`](https://github.com/stdlib-js/stdlib/commit/212b623d3f01f92a8bbf29b6e8f6e67fa879cb40) - **docs:** rename function alias _(by Athan Reines)_
 -   [`1c9a2da`](https://github.com/stdlib-js/stdlib/commit/1c9a2dad4c7ff11aefab03110d9c0fa7ad94e969) - **docs:** update copy _(by Athan Reines)_
 -   [`d02db19`](https://github.com/stdlib-js/stdlib/commit/d02db19483a002759417943f0a6c8521fdfe1a4c) - **docs:** update note _(by Athan Reines)_
