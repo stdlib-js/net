@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-15)
+## Unreleased (2025-08-16)
 
 <section class="bug-fixes">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`212b623`](https://github.com/stdlib-js/stdlib/commit/212b623d3f01f92a8bbf29b6e8f6e67fa879cb40) - **docs:** rename function alias _(by Athan Reines)_
 -   [`1c9a2da`](https://github.com/stdlib-js/stdlib/commit/1c9a2dad4c7ff11aefab03110d9c0fa7ad94e969) - **docs:** update copy _(by Athan Reines)_
 -   [`d02db19`](https://github.com/stdlib-js/stdlib/commit/d02db19483a002759417943f0a6c8521fdfe1a4c) - **docs:** update note _(by Athan Reines)_
 -   [`7e695d4`](https://github.com/stdlib-js/stdlib/commit/7e695d4145153f2c44af922aad5e4f6e9a131b90) - **style:** remove space _(by Athan Reines)_
