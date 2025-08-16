@@ -33,6 +33,7 @@
 
 <details>
 
+-   [`02911b0`](https://github.com/stdlib-js/stdlib/commit/02911b0457750185f9b83c04e8e964ee5440d91e) - **docs:** fix typo _(by Philipp Burckhardt)_
 -   [`6bb94b5`](https://github.com/stdlib-js/stdlib/commit/6bb94b5e2b1b81704a18e8b8ba6ed2bcccce4c23) - **docs:** add note _(by Athan Reines)_
 -   [`9f3732f`](https://github.com/stdlib-js/stdlib/commit/9f3732f2587d7e0f4ad16589ca5900b0cf20bbc0) - **docs:** fix examples _(by Athan Reines)_
 -   [`1f08a8b`](https://github.com/stdlib-js/stdlib/commit/1f08a8b3c6f9c39c316380b1c059ddac187d004c) - **docs:** fix examples _(by Athan Reines)_
