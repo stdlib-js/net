@@ -33,6 +33,7 @@
 
 <details>
 
+-   [`6bb94b5`](https://github.com/stdlib-js/stdlib/commit/6bb94b5e2b1b81704a18e8b8ba6ed2bcccce4c23) - **docs:** add note _(by Athan Reines)_
 -   [`9f3732f`](https://github.com/stdlib-js/stdlib/commit/9f3732f2587d7e0f4ad16589ca5900b0cf20bbc0) - **docs:** fix examples _(by Athan Reines)_
 -   [`1f08a8b`](https://github.com/stdlib-js/stdlib/commit/1f08a8b3c6f9c39c316380b1c059ddac187d004c) - **docs:** fix examples _(by Athan Reines)_
 -   [`465d54a`](https://github.com/stdlib-js/stdlib/commit/465d54a5f86566d92668f524dadd08d6127f85d4) - **test:** fix option name _(by Athan Reines)_
