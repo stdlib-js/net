@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-16)
+## Unreleased (2025-08-17)
 
 <section class="features">
 
@@ -33,6 +33,7 @@
 
 <details>
 
+-   [`6d48b26`](https://github.com/stdlib-js/stdlib/commit/6d48b26e1cdb3c2f6cfb39dd188b8c48ea595e69) - **chore:** fix error message typo _(by Philipp Burckhardt)_
 -   [`02911b0`](https://github.com/stdlib-js/stdlib/commit/02911b0457750185f9b83c04e8e964ee5440d91e) - **docs:** fix typo _(by Philipp Burckhardt)_
 -   [`6bb94b5`](https://github.com/stdlib-js/stdlib/commit/6bb94b5e2b1b81704a18e8b8ba6ed2bcccce4c23) - **docs:** add note _(by Athan Reines)_
 -   [`9f3732f`](https://github.com/stdlib-js/stdlib/commit/9f3732f2587d7e0f4ad16589ca5900b0cf20bbc0) - **docs:** fix examples _(by Athan Reines)_
