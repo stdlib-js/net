@@ -33,6 +33,7 @@
 
 <details>
 
+-   [`126b871`](https://github.com/stdlib-js/stdlib/commit/126b871b84181dae9726c3c0e28cd2c5873d2608) - **refactor:** update error message _(by Athan Reines)_
 -   [`6d48b26`](https://github.com/stdlib-js/stdlib/commit/6d48b26e1cdb3c2f6cfb39dd188b8c48ea595e69) - **chore:** fix error message typo _(by Philipp Burckhardt)_
 -   [`02911b0`](https://github.com/stdlib-js/stdlib/commit/02911b0457750185f9b83c04e8e964ee5440d91e) - **docs:** fix typo _(by Philipp Burckhardt)_
 -   [`6bb94b5`](https://github.com/stdlib-js/stdlib/commit/6bb94b5e2b1b81704a18e8b8ba6ed2bcccce4c23) - **docs:** add note _(by Athan Reines)_
