@@ -77,7 +77,8 @@ var n = net;
 <div class="namespace-toc">
 
 -   <span class="signature">[`tempHttpServer( options[, clbk] )`][@stdlib/net/disposable-http-server]</span><span class="delimiter">: </span><span class="description">create a disposable HTTP server.</span>
--   <span class="signature">[`httpServer( [options,] [ requestListener] )`][@stdlib/net/http-server]</span><span class="delimiter">: </span><span class="description">HTTP server.</span>
+-   <span class="signature">[`httpServer( [options,] [requestListener] )`][@stdlib/net/http-server]</span><span class="delimiter">: </span><span class="description">HTTP server.</span>
+-   <span class="signature">[`http2SecureServer( options[, requestListener] )`][@stdlib/net/http2-secure-server]</span><span class="delimiter">: </span><span class="description">HTTP/2 server.</span>
 -   <span class="signature">[`simpleHttpServer( [options,] [clbk] )`][@stdlib/net/simple-http-server]</span><span class="delimiter">: </span><span class="description">create a simple HTTP server.</span>
 
 </div>
@@ -192,6 +193,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/net/disposable-http-server]: https://github.com/stdlib-js/net/tree/main/disposable-http-server
 
 [@stdlib/net/http-server]: https://github.com/stdlib-js/net/tree/main/http-server
+
+[@stdlib/net/http2-secure-server]: https://github.com/stdlib-js/net/tree/main/http2-secure-server
 
 [@stdlib/net/simple-http-server]: https://github.com/stdlib-js/net/tree/main/simple-http-server
 

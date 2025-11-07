@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-10)
+## Unreleased (2025-11-07)
 
 <section class="features">
 
 ### Features
 
+-   [`20555d4`](https://github.com/stdlib-js/stdlib/commit/20555d4eac0eebdf458f1c10d23073b73d16a27f) - update `net` TypeScript declarations
 -   [`6c3f6fe`](https://github.com/stdlib-js/stdlib/commit/6c3f6fe6f732b28c68637aa2c651c451c740a8e1) - add `http2SecureServer` to namespace
 -   [`fd25355`](https://github.com/stdlib-js/stdlib/commit/fd253551235716d6732acc99ca9dfe6363bd577d) - add `net/http2-secure-server`
 
@@ -33,6 +34,8 @@
 
 <details>
 
+-   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
+-   [`20555d4`](https://github.com/stdlib-js/stdlib/commit/20555d4eac0eebdf458f1c10d23073b73d16a27f) - **feat:** update `net` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`adde2e9`](https://github.com/stdlib-js/stdlib/commit/adde2e9438a56675d76940de2e29f510a80688b3) - **docs:** update related packages sections [(#8051)](https://github.com/stdlib-js/stdlib/pull/8051) _(by stdlib-bot)_
 -   [`8b0b780`](https://github.com/stdlib-js/stdlib/commit/8b0b78084a2ff5d7a76ba3c5945b13d7f0906f4f) - **docs:** fix TypeScript declaration linting errors _(by Philipp Burckhardt)_
 -   [`126b871`](https://github.com/stdlib-js/stdlib/commit/126b871b84181dae9726c3c0e28cd2c5873d2608) - **refactor:** update error message _(by Athan Reines)_
