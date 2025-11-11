@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-07)
+## Unreleased (2025-11-11)
 
 <section class="features">
 
@@ -34,6 +34,8 @@
 
 <details>
 
+-   [`5ef68f1`](https://github.com/stdlib-js/stdlib/commit/5ef68f1c13701e558f6ccebab1d19d2884c51dab) - **chore:** pass in argument _(by Philipp Burckhardt)_
+-   [`fd724e3`](https://github.com/stdlib-js/stdlib/commit/fd724e3e655b938147a6d31efcaedab8f743a725) - **chore:** fix copyright years _(by Philipp Burckhardt)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
 -   [`20555d4`](https://github.com/stdlib-js/stdlib/commit/20555d4eac0eebdf458f1c10d23073b73d16a27f) - **feat:** update `net` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`adde2e9`](https://github.com/stdlib-js/stdlib/commit/adde2e9438a56675d76940de2e29f510a80688b3) - **docs:** update related packages sections [(#8051)](https://github.com/stdlib-js/stdlib/pull/8051) _(by stdlib-bot)_
