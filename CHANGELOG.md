@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-17)
+## Unreleased (2026-01-24)
 
 <section class="features">
 
@@ -34,6 +34,7 @@
 
 <details>
 
+-   [`56a6ce8`](https://github.com/stdlib-js/stdlib/commit/56a6ce8ba25fe8e1710f04aad9d99696332b7616) - **refactor:** do not require static `byteLength` method _(by Philipp Burckhardt)_
 -   [`5ef68f1`](https://github.com/stdlib-js/stdlib/commit/5ef68f1c13701e558f6ccebab1d19d2884c51dab) - **chore:** pass in argument _(by Philipp Burckhardt)_
 -   [`fd724e3`](https://github.com/stdlib-js/stdlib/commit/fd724e3e655b938147a6d31efcaedab8f743a725) - **chore:** fix copyright years _(by Philipp Burckhardt)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
