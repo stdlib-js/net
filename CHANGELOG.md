@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-23)
+## Unreleased (2026-04-28)
 
 <section class="features">
 
@@ -34,6 +34,7 @@
 
 <details>
 
+-   [`0dc62ae`](https://github.com/stdlib-js/stdlib/commit/0dc62ae39a4817ff888e9736c3ea599f6beff4e5) - **build:** replace `eslint-plugin-node` with `eslint-plugin-n` [(#10952)](https://github.com/stdlib-js/stdlib/pull/10952) _(by Philipp Burckhardt, Athan Reines)_
 -   [`56a6ce8`](https://github.com/stdlib-js/stdlib/commit/56a6ce8ba25fe8e1710f04aad9d99696332b7616) - **refactor:** do not require static `byteLength` method _(by Philipp Burckhardt)_
 -   [`5ef68f1`](https://github.com/stdlib-js/stdlib/commit/5ef68f1c13701e558f6ccebab1d19d2884c51dab) - **chore:** pass in argument _(by Philipp Burckhardt)_
 -   [`fd724e3`](https://github.com/stdlib-js/stdlib/commit/fd724e3e655b938147a6d31efcaedab8f743a725) - **chore:** fix copyright years _(by Philipp Burckhardt)_
