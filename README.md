@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import net from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@esm/index.mjs';
+import net from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@v0.4.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { http2SecureServer, httpServer, simpleHttpServer, tempHttpServer } from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@esm/index.mjs';
+import { http2SecureServer, httpServer, simpleHttpServer, tempHttpServer } from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@v0.4.1-esm/index.mjs';
 ```
 
 #### net
@@ -92,7 +92,7 @@ var n = net;
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import net from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@esm/index.mjs';
+import net from 'https://cdn.jsdelivr.net/gh/stdlib-js/net@v0.4.1-esm/index.mjs';
 
 console.log( objectKeys( net ) );
 
