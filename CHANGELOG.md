@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-09-04)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`1d37742`](https://github.com/stdlib-js/stdlib/commit/1d377422ce4529834239ee78d6df959c7313956d) - **chore:** regenerate expired TLS test fixtures [(#14974)](https://github.com/stdlib-js/stdlib/pull/14974) _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.4.1">
 
 ## 0.4.1 (2026-06-05)
